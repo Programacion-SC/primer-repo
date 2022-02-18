@@ -164,7 +164,7 @@ main {
 }
 
 /*Para celulares*/
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 320px) and (max-width: 760px) {
   .contenedor {
     max-width: 100rem;
     grid-template-rows: 10rem auto auto auto auto 10rem;
@@ -178,6 +178,11 @@ main {
   .posicionLogoGP {
     color: cornsilk;
     padding-top: 0.5rem;
+  }
+  .posicionMenuBarra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .tamañoFotoNosotros {
     max-width: 12rem;
@@ -238,6 +243,7 @@ main {
   .menu {
     font-size: 0.6rem;
   }
+  
   .colorMenu {
     display: flex;
     flex-direction: column;
@@ -258,10 +264,34 @@ main {
   .fotoTamaño {
     max-width: 9rem;
   }
+} 
+/*Para tablets*/
+@media screen and (min-width: 760px) and (max-width:1200px){
+  .contenedor {
+    grid-template-rows: 10rem auto auto auto auto 10rem;
+    grid-template-columns: auto;
+    grid-template-areas: 'headerIndex' "navIndex" 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+.estiloMenu{
+  font-size: 0.9rem;
+}
+.colorAqui {
+  color: rgb(193, 233, 130);
+  font-size: 0.8rem;
+}
+.tamañoFoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: none;
+  max-width: 30rem;
+}
 }
 
 /*Para computadoras*/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .contenedor {
     max-width: none;
     grid-template-rows: auto auto auto auto auto;
@@ -274,12 +304,11 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .menuHorizontal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .estiloMenu{
+    font-size: 1rem;
   }
-  #tamañoFoto {
+  
+  .tamañoFoto {
     /*frase*/
     display: flex;
     flex-direction: column;
