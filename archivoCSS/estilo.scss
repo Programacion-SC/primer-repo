@@ -48,6 +48,9 @@ h2 {
     font-size: 1rem;
   }
 }
+a {
+  color: cornsilk !important;
+}
 
 /*Para la página principal (INDEX)*/
 
@@ -79,42 +82,42 @@ h2 {
   list-style-type: none;
 }
 p {
-    color: rgb(255, 255, 255);
-    line-height: 1, 5;
-    font-size: 1rem;
+  color: rgb(255, 255, 255);
+  line-height: 1, 5;
+  font-size: 1rem;
 }
 /*Para el archivo de la página "contactos"*/
 legend {
-    color: cornsilk;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-bottom: 1.2rem;
-    line-height: 2;
-  }
-  
-  .cuestionarioEstilo {
-    display: block;
-    font-size: 1.3rem;
-    color: cornsilk;
-  }
+  color: cornsilk;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+  line-height: 2;
+}
+
+.cuestionarioEstilo {
+  display: block;
+  font-size: 1.3rem;
+  color: cornsilk;
+}
 /*Para el archivo de la página nosotros*/
 
 .infoGP {
-    color: cornsilk;
-    font-size: 1rem;
-    line-height: normal;
-    font-size: 1.3rem;
-    text-align: justify;
-    margin-left: 2rem;
-    display: inline;
-  }
-  
-  .nosotrosOrganizacion {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    line-height: 2;
-  }
+  color: cornsilk;
+  font-size: 1rem;
+  line-height: normal;
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-left: 2rem;
+  display: inline;
+}
+
+.nosotrosOrganizacion {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  line-height: 2;
+}
 
 /*MEDIA QUERIES*/
 header {
@@ -141,9 +144,7 @@ main {
 .contenedor {
   display: grid;
 }
-.contenedorInfo {
-  display: grid;
-}
+
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 850px) {
   .contenedor {
@@ -167,33 +168,33 @@ main {
   }
 }
 /*Para tablets*/
-@media screen and (min-width: 850px) and (max-width:1200px){
-    .contenedor {
-      grid-template-rows: 10rem auto auto auto auto 10rem;
-      grid-template-columns: auto;
-      grid-row-gap: 1rem;
-      grid-template-areas: 'headerIndex' "navIndex" 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-  .estiloMenu{
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+  .contenedor {
+    grid-template-rows: 10rem auto auto auto auto 10rem;
+    grid-template-columns: auto;
+    grid-row-gap: 1rem;
+    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .estiloMenu {
     font-size: 0.9rem;
   }
   .colorAqui {
     color: rgb(193, 233, 130);
     font-size: 0.8rem;
   }
-  .estiloMenu{
+  .estiloMenu {
     font-size: 0.9rem;
   }
 }
 /*Para computadoras*/
 @media screen and (min-width: 1200px) {
-    .contenedor {
-      max-width: none;
-      grid-template-rows: auto auto auto auto auto;
-      grid-template-columns: auto;
-      grid-row-gap: 2rem;
-      grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
-    }
+  .contenedor {
+    max-width: none;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-row-gap: 2rem;
+    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+  }
 }
