@@ -16,7 +16,6 @@ body {
 }
 
 .estiloMenu {
-  color: cornsilk !important;
   line-height: 2.5;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
@@ -72,6 +71,21 @@ a {
   color: cornsilk !important;
 }
 
+.posicionMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: darkseagreen;
+  list-style-type: none;
+}
+
 /*Para la página principal (INDEX)*/
 .estiloBienvenida {
   color: cornsilk;
@@ -96,21 +110,6 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
-
-.posicionMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: darkseagreen;
-  list-style-type: none;
 }
 
 p {

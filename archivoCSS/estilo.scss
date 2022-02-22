@@ -1,8 +1,10 @@
 /* Para todas las páginas*/
+
 * {
   margin: 0px;
   padding: 0px;
 }
+
 body {
   background: linear-gradient(rgb(88, 139, 88), rgb(155, 206, 163));
 }
@@ -12,12 +14,12 @@ body {
 }
 
 .estiloMenu {
-  color: cornsilk !important;
   line-height: 2.5;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
   font-size: 1.2rem;
 }
+
 
 h2 {
   display: block;
@@ -48,8 +50,16 @@ h2 {
     font-size: 1rem;
   }
 }
-a {
+a{
   color: cornsilk !important;
+}
+
+.posicionMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: darkseagreen;
+  list-style-type: none;
 }
 
 /*Para la página principal (INDEX)*/
@@ -74,13 +84,8 @@ a {
   justify-content: space-evenly;
 }
 
-.posicionMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: darkseagreen;
-  list-style-type: none;
-}
+
+
 p {
   color: rgb(255, 255, 255);
   line-height: 1, 5;
