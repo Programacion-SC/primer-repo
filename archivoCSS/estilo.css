@@ -7,42 +7,28 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#588b58), to(#9bcea3));
   background: linear-gradient(#588b58, #9bcea3);
 }
 
 .encabezado {
-  color: cornsilk;
+  color: #fff8dc;
 }
 
 .estiloMenu {
   line-height: 2.5;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
-  font-size: 1.2rem;
 }
 
 h2 {
   display: block;
-  color: cornsilk;
+  color: #fff8dc;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 2;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: one;
-          animation-iteration-count: one;
-}
-
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: one;
 }
 
 @keyframes aparecer {
@@ -55,12 +41,12 @@ h2 {
 }
 
 .tituloRedes {
-  color: cornsilk;
+  color: #fff8dc;
   font-size: 1.5rem;
 }
 
 .tituloRedes .estiloRedes {
-  color: cornsilk;
+  color: #fff8dc;
   line-height: 1.5;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
@@ -72,23 +58,16 @@ a {
 }
 
 .posicionMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: darkseagreen;
   list-style-type: none;
 }
 
 /*Para la página principal (INDEX)*/
 .estiloBienvenida {
-  color: cornsilk;
+  color: #fff8dc;
   font-size: 1.05rem;
 }
 
@@ -98,29 +77,25 @@ a {
 
 /*Para el archivo de la página de los productos*/
 .productosOrganizacion {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   width: 85%;
   margin-left: 5rem;
   margin-right: 5rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 p {
-  color: white;
+  color: #fff8dc;
   line-height: 1, 5;
   font-size: 1rem;
 }
 
 /*Para el archivo de la página "contactos"*/
 legend {
-  color: cornsilk;
+  color: #fff8dc;
   font-size: 2rem;
   font-weight: bold;
   padding-bottom: 1.2rem;
@@ -130,12 +105,12 @@ legend {
 .cuestionarioEstilo {
   display: block;
   font-size: 1.3rem;
-  color: cornsilk;
+  color: #fff8dc;
 }
 
 /*Para el archivo de la página nosotros*/
 .infoGP {
-  color: cornsilk;
+  color: #fff8dc;
   font-size: 1rem;
   line-height: normal;
   font-size: 1.3rem;
@@ -145,15 +120,9 @@ legend {
 }
 
 .nosotrosOrganizacion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row-reverse;
+  justify-content: space-around;
   line-height: 2;
 }
 
@@ -187,7 +156,6 @@ main {
 }
 
 .contenedor {
-  display: -ms-grid;
   display: grid;
 }
 
@@ -195,30 +163,19 @@ main {
 @media screen and (min-width: 320px) and (max-width: 850px) {
   .contenedor {
     max-width: none;
-    -ms-grid-rows: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
     grid-row-gap: 2rem;
-        grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
   }
   .productosOrganizacion {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     margin-left: 10%;
     margin-right: 10%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .tamañoFotoNosotros {
     max-width: 22rem;
@@ -228,12 +185,10 @@ main {
 /*Para tablets*/
 @media screen and (min-width: 850px) and (max-width: 1200px) {
   .contenedor {
-    -ms-grid-rows: 10rem auto auto auto auto 10rem;
-        grid-template-rows: 10rem auto auto auto auto 10rem;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-rows: 10rem auto auto auto auto 10rem;
+    grid-template-columns: auto;
     grid-row-gap: 1rem;
-        grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
     margin-left: 2rem;
     margin-right: 2rem;
   }
@@ -244,8 +199,15 @@ main {
     color: #c1e982;
     font-size: 0.8rem;
   }
-  .estiloMenu {
-    font-size: 0.9rem;
+  .productosOrganizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 85%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-evenly;
   }
 }
 
@@ -253,12 +215,19 @@ main {
 @media screen and (min-width: 1200px) {
   .contenedor {
     max-width: none;
-    -ms-grid-rows: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
     grid-row-gap: 2rem;
-        grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+  }
+  .productosOrganizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 85%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-evenly;
   }
 }
-/*# sourceMappingURL=estilo.css.map */

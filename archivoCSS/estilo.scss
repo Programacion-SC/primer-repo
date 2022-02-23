@@ -1,5 +1,5 @@
 /* Para todas las páginas*/
-
+$colorPag: #fff8dc;
 * {
   margin: 0px;
   padding: 0px;
@@ -10,20 +10,19 @@ body {
 }
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,300;1,200&family=Raleway:ital,wght@1,200&family=Shadows+Into+Light&display=swap');
 .encabezado {
-  color: cornsilk;
+  color:$colorPag;
 }
 
 .estiloMenu {
   line-height: 2.5;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
-  font-size: 1.2rem;
 }
 
 
 h2 {
   display: block;
-  color: cornsilk;
+  color: $colorPag;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 2;
@@ -40,10 +39,10 @@ h2 {
   }
 }
 .tituloRedes {
-  color: cornsilk;
+  color: $colorPag;
   font-size: 1.5rem;
   .estiloRedes {
-    color: cornsilk;
+    color: $colorPag;
     line-height: 1.5;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
@@ -65,7 +64,7 @@ a{
 /*Para la página principal (INDEX)*/
 
 .estiloBienvenida {
-  color: cornsilk;
+  color: $colorPag;
   font-size: 1.05rem;
   .colorAqui {
     color: rgb(86, 138, 94);
@@ -84,16 +83,14 @@ a{
   justify-content: space-evenly;
 }
 
-
-
 p {
-  color: rgb(255, 255, 255);
+  color: $colorPag;
   line-height: 1, 5;
   font-size: 1rem;
 }
 /*Para el archivo de la página "contactos"*/
 legend {
-  color: cornsilk;
+  color: $colorPag;
   font-size: 2rem;
   font-weight: bold;
   padding-bottom: 1.2rem;
@@ -103,12 +100,12 @@ legend {
 .cuestionarioEstilo {
   display: block;
   font-size: 1.3rem;
-  color: cornsilk;
+  color: $colorPag;
 }
 /*Para el archivo de la página nosotros*/
 
 .infoGP {
-  color: cornsilk;
+  color: $colorPag;
   font-size: 1rem;
   line-height: normal;
   font-size: 1.3rem;
@@ -189,8 +186,15 @@ main {
     color: rgb(193, 233, 130);
     font-size: 0.8rem;
   }
-  .estiloMenu {
-    font-size: 0.9rem;
+  .productosOrganizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 85%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-evenly;
   }
 }
 /*Para computadoras*/
@@ -201,5 +205,15 @@ main {
     grid-template-columns: auto;
     grid-row-gap: 2rem;
     grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+  }
+  .productosOrganizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 85%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-evenly;
   }
 }
