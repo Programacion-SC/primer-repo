@@ -8,8 +8,12 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#588b58), to(#9bcea3));
-  background: linear-gradient(#588b58, #9bcea3);
+  background: -webkit-gradient(linear, left top, left bottom, from(#588b58), to(#f5880b));
+  background: linear-gradient(#588b58, #f5880b);
+}
+
+p {
+  font-size: 1rem;
 }
 
 .encabezado {
@@ -35,7 +39,7 @@ body {
 .estiloTitulos {
   display: block;
   color: #fff8dc;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 2;
   -webkit-animation-duration: 3s;
@@ -71,7 +75,7 @@ body {
 
 .tituloRedes .estiloRedes {
   color: #fff8dc;
-  line-height: 1.5;
+  line-height: 1.5rem;
   text-decoration: none;
   font-family: 'Courier Prime', monospace;
   font-size: 1rem;
@@ -99,7 +103,7 @@ a {
 /*Para la página principal (INDEX)*/
 .estiloBienvenida {
   color: #fff8dc;
-  font-size: 1.05rem;
+  font-size: 1.7rem;
 }
 
 .estiloBienvenida .colorAqui {
@@ -138,14 +142,14 @@ a {
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
       grid-template-areas: "bienvenidaIndex" "tituloVinos" "vinosOrganicos" "perfumeria";
-  grid-row-gap: 4.5rem;
+  grid-row-gap: 4rem;
 }
 
 .OrganizacionProdIndex .vinosOrganicos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: 10rem 10rem 10rem 10rem;
+      grid-template-columns: 10rem 10rem 10rem 10rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -153,8 +157,8 @@ a {
 .OrganizacionProdIndex .perfumeriaGP {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: 10rem 10rem 10rem 10rem;
+      grid-template-columns: 10rem 10rem 10rem 10rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -186,22 +190,21 @@ legend {
   color: #fff8dc;
   font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 1.2rem;
+  padding-bottom: 1.8rem;
   line-height: 2;
 }
 
 .cuestionarioEstilo {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #fff8dc;
 }
 
 /*Para el archivo de la página nosotros*/
 .infoGP {
   color: #fff8dc;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: normal;
-  font-size: 1.3rem;
   text-align: justify;
   margin-left: 2rem;
   display: inline;
@@ -354,7 +357,7 @@ main {
         justify-content: space-around;
   }
   .estiloMenu {
-    font-size: 0.9rem;
+    font-size: 2.1rem;
   }
   .colorAqui {
     color: #c1e982;
@@ -418,6 +421,9 @@ main {
         grid-template-columns: auto auto auto auto;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .OrganizacionProdIndex .perfumeriaGP {
+    max-width: 80rem;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
