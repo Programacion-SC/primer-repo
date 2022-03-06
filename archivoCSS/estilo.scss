@@ -1,8 +1,22 @@
 /* Para todas las páginas*/
 /*import y variables*/
 @import '_variables';
+@import "_mediaQueries";
 $colorPag: #fff8dc;
+$colorAqui: rgb(193, 233, 130);
 $fontSize: 1.5rem;
+@mixin parrafos {
+  color: $colorPag;
+  font-size: ($fontSize)-0.4rem;
+  line-height: normal;
+  text-align: justify;
+  margin-left: 2rem;
+  display: inline;
+}
+@mixin padding {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 
 * {
   margin: 0px;
@@ -72,51 +86,19 @@ a {
   background-color: darkseagreen;
   list-style-type: none;
 }
-.tamañoCarrousel {
-  margin-left: 5rem;
-  max-width: 100rem;
-}
+
+
+
 
 /*Para la página principal (INDEX)*/
 
 .estiloBienvenida {
-  color: $colorPag;
-  font-size: ($fontSize) --0.1rem;
+ @include parrafos();
   .colorAqui {
     color: rgb(86, 138, 94);
   }
 }
-.estiloBienvenida {
-  grid-area: bienvenidaIndex;
-}
-.vinosOrganicos {
-  grid-area: vinosOrganicos;
-}
-.tituloVinos {
-  grid-area: tituloVinos;
-}
-.perfumeria {
-  grid-area: perfumeria;
-}
-.tituloPerfumeria{
-  grid-area:tituloPerfumeria
-}
-.OrganizacionProdIndex {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: 'bienvenidaIndex' 'tituloVinos' 'vinosOrganicos' 'perfumeria';
-  .vinosOrganicos {
-    display: grid;
-    grid-template-columns: 10rem 10rem 10rem 10rem;
-    justify-content: space-around;
-  }
-  .perfumeriaGP {
-    display: grid;
-    grid-template-columns: 10rem 10rem 10rem 10rem;
-    justify-content: space-around;
-  }
-}
+
 
 /*Para el archivo de la página de los productos*/
 
@@ -153,12 +135,7 @@ legend {
 /*Para el archivo de la página nosotros*/
 
 .infoGP {
-  color: $colorPag;
-  font-size: ($fontSize)-0.4rem;
-  line-height: normal;
-  text-align: justify;
-  margin-left: 2rem;
-  display: inline;
+  @include parrafos();
 }
 
 .nosotrosOrganizacion {
@@ -167,159 +144,4 @@ legend {
   justify-content: space-around;
   line-height: 2;
 }
-/*
-/*MEDIA QUERIES*/
-header {
-  grid-area: headerIndex;
-}
-nav {
-  grid-area: navIndex;
-}
-aside {
-  grid-area: asideIndex;
-}
-section {
-  grid-area: sectionIndex;
-}
-footer {
-  grid-area: footerIndex;
-}
-main {
-  grid-area: main;
-}
-.contenedorInfo {
-  grid-area: contenedorInfo;
-}
-.contenedor {
-  display: grid;
-}
 
-/*Vista para celulares*/
-@media screen and (min-width: 320px) and (max-width: 850px) {
-  .contenedor {
-    max-width: none;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto;
-    grid-row-gap: 2rem;
-    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
-  }
-  .OrganizacionProdIndex {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 'bienvenidaIndex' 'tituloVinos' 'vinosOrganicos' "tituloPerfumeria" "perfumeria";
-    grid-row-gap: 4.5rem;
-    .vinosOrganicos {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: space-around;
-    }
-    .perfumeriaGP {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: space-around;
-    }
-    .tamañoCarrousel {
-      margin-left: 5rem;
-      max-width: 22rem;
-    }
-  }
-  .productosOrganizacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: space-evenly;
-  }
-
-
-}
-/*Para tablets*/
-@media screen and (min-width: 850px) and (max-width: 1200px) {
-  .contenedor {
-    grid-template-rows: 10rem auto auto auto auto 10rem;
-    grid-template-columns: auto;
-    grid-row-gap: 1rem;
-    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .OrganizacionProdIndex {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 'bienvenidaIndex' 'tituloVinos' 'vinosOrganicos' "tituloPerfumeria" "perfumeria";
-    grid-row-gap: 4.5rem;
-    .vinosOrganicos {
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-content: space-around;
-    }
-    .perfumeriaGP {
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-content: space-around;
-    }
-  }
-
-  .colorAqui {
-    color: rgb(193, 233, 130);
-    font-size: ($fontSize)-0.7rem;
-  }
-  .productosOrganizacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    width: 85%;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    justify-content: space-evenly;
-  }
-  .tamañoCarrousel {
-    margin-left: 5rem;
-    max-width: 70rem;
-  }
-}
-/*Para computadoras*/
-@media screen and (min-width: 1200px) {
-  .contenedor {
-    max-width: none;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: auto;
-    grid-row-gap: 2rem;
-    grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
-  }
-  .productosOrganizacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    width: 85%;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    justify-content: space-evenly;
-  }
-  .OrganizacionProdIndex {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: 'bienvenidaIndex' 'tituloVinos' 'vinosOrganicos' "tituloPerfumeria" "perfumeria";
-    grid-row-gap: 4rem;
-    .vinosOrganicos {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      justify-content: space-around;
-    }
-    .perfumeriaGP {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      justify-content: space-around;
-    }
-  }
-  .tamañoCarrousel {
-    max-width: 70rem;
-  }
-}
