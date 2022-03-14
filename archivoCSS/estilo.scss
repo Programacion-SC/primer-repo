@@ -17,6 +17,8 @@ $fontSize: 1.5rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
+/*Tipografía*/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,300;1,200&family=Raleway:ital,wght@1,200&family=Shadows+Into+Light&display=swap');
 
 * {
   margin: 0px;
@@ -30,7 +32,7 @@ p {
   font-size: ($fontSize)-0.5rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,300;1,200&family=Raleway:ital,wght@1,200&family=Shadows+Into+Light&display=swap');
+
 .encabezado {
   color: $colorPag;
 }
@@ -46,6 +48,9 @@ p {
   font-family: 'Courier Prime', monospace;
 }
 
+.estiloMenu:hover{
+  text-decoration: underline;
+}
 .estiloTitulos {
   display: block;
   color: $colorPag;
@@ -88,8 +93,6 @@ a {
 }
 
 
-
-
 /*Para la página principal (INDEX)*/
 
 .estiloBienvenida {
@@ -100,19 +103,12 @@ a {
 }
 
 
+
 /*Para el archivo de la página de los productos*/
-
-.productosOrganizacion {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  width: 85%;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  justify-content: space-evenly;
+.sectionCentrado{
+  display: flex;
+  justify-content: space-around;
 }
-
 p {
   color: $colorPag;
   line-height: 1, 5;
@@ -137,11 +133,21 @@ legend {
 .infoGP {
   @include parrafos();
 }
-
 .nosotrosOrganizacion {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   line-height: 2;
 }
+
+/*.animacionNosotros{
+animation-name: animacionNosotros;
+animation-iteration-count: 1;
+animation-timing-function: ease;
+animation-duration: 3s;
+}
+@keyframes animacionNosotros{
+
+}
+*/
 
