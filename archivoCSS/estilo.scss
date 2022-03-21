@@ -128,6 +128,9 @@ legend {
   font-size: ($fontSize) --0.2rem;
   color: $colorPag;
 }
+.margenContacto{
+  @include padding();
+}
 /*Para el archivo de la página nosotros*/
 
 .infoGP {

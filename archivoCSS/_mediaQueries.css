@@ -56,7 +56,6 @@ main {
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .contenedor {
-    max-width: none;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: auto;
     grid-row-gap: 2rem;
@@ -71,12 +70,12 @@ main {
   }
   .vinosOrganicos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
   }
   .perfumeriaGP {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
   }
   .tamañoCarrousel {
