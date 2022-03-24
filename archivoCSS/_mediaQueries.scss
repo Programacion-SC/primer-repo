@@ -52,6 +52,15 @@ main {
 .tituloPerfumeria {
   grid-area: tituloPerfumeria;
 }
+.mailContacto{
+  grid-area: mailContacto;
+}
+.imgMailContacto{
+  grid-area: imgMailContacto;
+}
+.infoMailContacto{
+  grid-area:infoMailContacto;
+}
 
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -146,13 +155,13 @@ main {
     grid-row-gap: 2rem;
     grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
   }
+  
 
   .productosOrganizacion {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    width: 85%;
     justify-content: space-evenly;
     @include padding();
   }

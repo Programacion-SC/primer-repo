@@ -53,6 +53,18 @@ main {
   grid-area: tituloPerfumeria;
 }
 
+.mailContacto {
+  grid-area: mailContacto;
+}
+
+.imgMailContacto {
+  grid-area: imgMailContacto;
+}
+
+.infoMailContacto {
+  grid-area: infoMailContacto;
+}
+
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .contenedor {
@@ -150,10 +162,9 @@ main {
   }
   .productosOrganizacion {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    width: 85%;
     justify-content: space-evenly;
     margin-left: 2rem;
     margin-right: 2rem;
