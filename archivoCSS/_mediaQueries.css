@@ -53,18 +53,6 @@ main {
   grid-area: tituloPerfumeria;
 }
 
-.mailContacto {
-  grid-area: mailContacto;
-}
-
-.imgMailContacto {
-  grid-area: imgMailContacto;
-}
-
-.infoMailContacto {
-  grid-area: infoMailContacto;
-}
-
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .contenedor {
@@ -80,7 +68,7 @@ main {
     grid-template-areas: 'bienvenidaIndex';
   }
   .max-widthIndex {
-    max-width: 10rem;
+    max-width: 20rem;
   }
   .tamañoCarrousel {
     margin-left: 2rem;
@@ -101,6 +89,37 @@ main {
   .estiloBienvenida {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  /*Página Contacto*/
+  .margenContactoForm {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoAside {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoSection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fontSizeContacto {
+    font-size: 1.5rem;
+  }
+  .fontSizeContact {
+    font-size: 1.5rem -0.5rem;
+  }
+  li {
+    color: #fff8dc;
+  }
+  .infoMailContacto {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -149,6 +168,31 @@ main {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  /*Página contacto*/
+  .margenContactoForm {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoAside {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoSection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-right: 10rem;
+  }
+  .fontSizeContacto {
+    font-size: 1.5rem;
+  }
+  .fontSizeContact {
+    font-size: 1.5rem -0.5rem;
+  }
+  li {
+    color: #fff8dc;
+  }
 }
 
 /*Para computadoras*/
@@ -191,5 +235,30 @@ main {
   }
   .colorAqui {
     color: #c1e982;
+  }
+  /*Página Contacto*/
+  .margenContactoForm {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoAside {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-left: 5rem;
+  }
+  .margenContactoSection {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-right: 10rem;
+  }
+  .fontSizeContacto {
+    font-size: 1.5rem;
+  }
+  .fontSizeContact {
+    font-size: 1.5rem -0.5rem;
+  }
+  li {
+    color: #fff8dc;
   }
 }

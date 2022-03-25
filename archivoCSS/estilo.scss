@@ -128,27 +128,6 @@ legend {
   font-size: ($fontSize) --0.2rem;
   color: $colorPag;
 }
-.margenContactoForm{
-  @include padding();
-  margin-left: 5rem;
-}
-.margenContactoAside{
-  @include padding();
-  margin-left: 5rem;
-}
-.margenContactoSection{
-  @include padding();
-  margin-right: 10rem;
-}
-.fontSizeContacto{
-  font-size:$fontSize ;
-}
-.fontSizeContact{
-  font-size: $fontSize -0.5rem;
-}
-li{
-  color: $colorPag;
-}
 
 /*Para el archivo de la página nosotros*/
 

@@ -52,15 +52,7 @@ main {
 .tituloPerfumeria {
   grid-area: tituloPerfumeria;
 }
-.mailContacto{
-  grid-area: mailContacto;
-}
-.imgMailContacto{
-  grid-area: imgMailContacto;
-}
-.infoMailContacto{
-  grid-area:infoMailContacto;
-}
+
 
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -78,7 +70,7 @@ main {
    
   }
   .max-widthIndex{
-    max-width: 10rem
+    max-width: 20rem
   }
 
   .tamañoCarrousel {
@@ -98,6 +90,35 @@ main {
   }
   .estiloBienvenida {
     @include padding();
+  }
+  /*Página Contacto*/
+  .margenContactoForm{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoAside{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoSection{
+    @include padding();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fontSizeContacto{
+    font-size:$fontSize ;
+  }
+  .fontSizeContact{
+    font-size: $fontSize -0.5rem;
+  }
+  li{
+    color: $colorPag;
+  }
+  .infoMailContacto{
+    display: flex;
+
+    justify-content: center;
   }
 }
 /*Para tablets*/
@@ -145,6 +166,29 @@ main {
   .estiloBienvenida {
     @include padding();
   }
+  /*Página contacto*/
+  .margenContactoForm{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoAside{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoSection{
+    @include padding();
+    margin-right: 10rem;
+  }
+  .fontSizeContacto{
+    font-size:$fontSize ;
+  }
+  .fontSizeContact{
+    font-size: $fontSize -0.5rem;
+  }
+  li{
+    color: $colorPag;
+  }
+  
 }
 /*Para computadoras*/
 @media screen and (min-width: 1200px) {
@@ -187,4 +231,27 @@ main {
   .colorAqui {
     color: $colorAqui;
   }
+  /*Página Contacto*/
+  .margenContactoForm{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoAside{
+    @include padding();
+    margin-left: 5rem;
+  }
+  .margenContactoSection{
+    @include padding();
+    margin-right: 10rem;
+  }
+  .fontSizeContacto{
+    font-size:$fontSize ;
+  }
+  .fontSizeContact{
+    font-size: $fontSize -0.5rem;
+  }
+  li{
+    color: $colorPag;
+  }
+  
 }
