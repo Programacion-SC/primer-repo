@@ -70,8 +70,14 @@ main {
     grid-template-rows: auto;
     grid-template-areas: 'bienvenidaIndex';
   }
+  .nosotrosOrganizacion .nosotrosOrganizacion {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    line-height: 2;
+  }
   .max-widthIndex {
-    max-width: 10rem;
+    max-width: 20rem;
   }
   .tamañoCarrousel {
     margin-left: 2rem;
@@ -107,6 +113,9 @@ main {
   .margenContactoSection {
     margin-left: 2rem;
     margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .fontSizeContacto {
     font-size: 1.5rem;
@@ -116,6 +125,10 @@ main {
   }
   li {
     color: #fff8dc;
+  }
+  .infoMailContacto {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -257,6 +270,13 @@ main {
   li {
     color: #fff8dc;
   }
+  /*Página Nosotros*/
+  .nosotrosOrganizacion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    line-height: 2;
+  }
 }
 
 /*Tipografía*/
@@ -387,13 +407,6 @@ legend {
   text-align: justify;
   margin-left: 2rem;
   display: inline;
-}
-
-.nosotrosOrganizacion {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  line-height: 2;
 }
 
 /*.animacionNosotros{

@@ -134,12 +134,6 @@ legend {
 .infoGP {
   @include parrafos();
 }
-.nosotrosOrganizacion {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  line-height: 2;
-}
 
 /*.animacionNosotros{
 animation-name: animacionNosotros;

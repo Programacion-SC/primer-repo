@@ -67,6 +67,12 @@ main {
     grid-template-rows: auto;
     grid-template-areas: 'bienvenidaIndex';
   }
+  .nosotrosOrganizacion .nosotrosOrganizacion {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    line-height: 2;
+  }
   .max-widthIndex {
     max-width: 20rem;
   }
@@ -260,5 +266,12 @@ main {
   }
   li {
     color: #fff8dc;
+  }
+  /*Página Nosotros*/
+  .nosotrosOrganizacion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    line-height: 2;
   }
 }
