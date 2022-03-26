@@ -134,15 +134,9 @@ legend {
 .infoGP {
   @include parrafos();
 }
-
-/*.animacionNosotros{
-animation-name: animacionNosotros;
-animation-iteration-count: 1;
-animation-timing-function: ease;
-animation-duration: 3s;
+.margenInfoNosotros{
+  @include padding();
 }
-@keyframes animacionNosotros{
 
-}
-*/
+
 
