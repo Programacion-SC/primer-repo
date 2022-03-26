@@ -61,6 +61,7 @@ main {
     grid-template-columns: auto;
     grid-row-gap: 2rem;
     grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    max-width: 100%;
   }
   .OrganizacionProdIndex {
     display: grid;
@@ -207,6 +208,7 @@ main {
     grid-template-columns: auto;
     grid-row-gap: 2rem;
     grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
+    max-width: 100%;
   }
   
 
@@ -233,6 +235,10 @@ main {
   }
   .tamañoCarrousel {
     @include padding();
+    padding-right: 5rem;
+    padding-left: 5rem;
+    max-width: 100%;
+
   }
   .estiloBienvenida {
     @include padding();
