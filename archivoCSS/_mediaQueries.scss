@@ -52,7 +52,12 @@ main {
 .tituloPerfumeria {
   grid-area: tituloPerfumeria;
 }
-
+.fOrm{
+  grid-area: form;
+}
+.mAil{
+  grid-area: mailGrid;
+}
 
 /*Vista para celulares*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -66,21 +71,19 @@ main {
   .OrganizacionProdIndex {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto ;
+    grid-template-rows: auto;
     grid-template-areas: 'bienvenidaIndex';
-   
   }
-  .nosotrosOrganizacion{
+  .nosotrosOrganizacion {
     .nosotrosOrganizacion {
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-around;
       line-height: 2;
     }
-    
   }
-  .max-widthIndex{
-    max-width: 20rem
+  .max-widthIndex {
+    max-width: 20rem;
   }
 
   .tamañoCarrousel {
@@ -102,30 +105,30 @@ main {
     @include padding();
   }
   /*Página Contacto*/
-  .margenContactoForm{
+  .margenContactoForm {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoAside{
+  .margenContactoAside {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoSection{
+  .margenContactoSection {
     @include padding();
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .fontSizeContacto{
-    font-size:$fontSize ;
+  .fontSizeContacto {
+    font-size: $fontSize;
   }
-  .fontSizeContact{
+  .fontSizeContact {
     font-size: $fontSize -0.5rem;
   }
-  li{
+  li {
     color: $colorPag;
   }
-  .infoMailContacto{
+  .infoMailContacto {
     display: flex;
 
     justify-content: center;
@@ -177,28 +180,27 @@ main {
     @include padding();
   }
   /*Página contacto*/
-  .margenContactoForm{
+  .margenContactoForm {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoAside{
+  .margenContactoAside {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoSection{
+  .margenContactoSection {
     @include padding();
     margin-right: 10rem;
   }
-  .fontSizeContacto{
-    font-size:$fontSize ;
+  .fontSizeContacto {
+    font-size: $fontSize;
   }
-  .fontSizeContact{
+  .fontSizeContact {
     font-size: $fontSize -0.5rem;
   }
-  li{
+  li {
     color: $colorPag;
   }
-  
 }
 /*Para computadoras*/
 @media screen and (min-width: 1200px) {
@@ -210,7 +212,6 @@ main {
     grid-template-areas: 'headerIndex' 'navIndex' 'main' 'asideIndex' 'sectionIndex' 'footerIndex';
     max-width: 100%;
   }
-  
 
   .productosOrganizacion {
     display: grid;
@@ -226,7 +227,6 @@ main {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 'bienvenidaIndex' 'tituloVinos' 'vinosOrganicos' 'tituloPerfumeria' 'perfumeria';
-    grid-row-gap: 2rem;
   }
   .productosIndex {
     display: flex;
@@ -238,7 +238,6 @@ main {
     padding-right: 5rem;
     padding-left: 5rem;
     max-width: 100%;
-
   }
   .estiloBienvenida {
     @include padding();
@@ -247,26 +246,31 @@ main {
     color: $colorAqui;
   }
   /*Página Contacto*/
-  .margenContactoForm{
+  .margenContactoForm {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoAside{
+  .margenContactoAside {
     @include padding();
     margin-left: 5rem;
   }
-  .margenContactoSection{
+  .margenContactoSection {
     @include padding();
     margin-right: 10rem;
   }
-  .fontSizeContacto{
-    font-size:$fontSize ;
+  .fontSizeContacto {
+    font-size: $fontSize;
   }
-  .fontSizeContact{
+  .fontSizeContact {
     font-size: $fontSize -0.5rem;
   }
-  li{
+  li {
     color: $colorPag;
+  }
+  .flexContacto {
+    display: grid;
+    grid-template-columns: auto 20rem;
+    grid-template-areas: "form" "mailGrid";
   }
   /*Página Nosotros*/
   .nosotrosOrganizacion {
@@ -275,6 +279,4 @@ main {
     justify-content: space-around;
     line-height: 2;
   }
-  
-  
 }
